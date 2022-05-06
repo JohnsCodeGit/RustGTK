@@ -7,15 +7,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'RustGTK'",
+            "name": "Debug executable 'rust_gtk'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=RustGTK",
-                    "--package=RustGTK"
+                    "--bin=rust_gtk",
+                    "--package=rust_gtk"
                 ],
                 "filter": {
-                    "name": "RustGTK",
+                    "name": "rust_gtk",
                     "kind": "bin"
                 }
             },
@@ -25,16 +25,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'RustGTK'",
+            "name": "Debug unit tests in executable 'rust_gtk'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=RustGTK",
-                    "--package=RustGTK"
+                    "--bin=rust_gtk",
+                    "--package=rust_gtk"
                 ],
                 "filter": {
-                    "name": "RustGTK",
+                    "name": "rust_gtk",
                     "kind": "bin"
                 }
             },

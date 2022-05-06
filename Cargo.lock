@@ -3,13 +3,6 @@
 version = 3
 
 [[package]]
-name = "RustGTK"
-version = "0.1.0"
-dependencies = [
- "gtk4",
-]
-
-[[package]]
 name = "anyhow"
 version = "1.0.57"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -522,6 +515,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a1feb54ed693b93a84e14094943b84b7c4eae204c512b7ccb95ab0c66d278ad1"
 dependencies = [
  "proc-macro2",
+]
+
+[[package]]
+name = "rust_gtk"
+version = "0.1.0"
+dependencies = [
+ "gtk4",
 ]
 
 [[package]]
