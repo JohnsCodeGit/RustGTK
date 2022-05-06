@@ -43,8 +43,8 @@ impl RustGTKWindow {
             window: ApplicationWindow::new(app),
             btn_of_click: Button::with_label("Click Me"),
             btn_of_clicknt: Button::with_label("Don't click Me"),
-            home_box: Box::new(gtk4::Orientation::Horizontal, 5),
-            other_box: Box::new(gtk4::Orientation::Horizontal, 5),
+            home_box: Box::new(gtk4::Orientation::Vertical, 5),
+            other_box: Box::new(gtk4::Orientation::Vertical, 5),
             nav_box: Box::new(gtk4::Orientation::Vertical, 10),
             seppy: Separator::new(gtk4::Orientation::Horizontal),
             nav_home: Button::with_label("Home"),
@@ -80,18 +80,7 @@ impl RustGTKWindow {
     }
 
     pub fn home(&self){     
-    
-        // attach_button_listener(&self.btn_of_click, "Click");
-        // attach_button_listener(&self.btn_of_clicknt, "Clicknt");
-
-        // self.btn_box.append(&self.btn_of_click);
-        // self.btn_box.append(&self.btn_of_clicknt);
-        // self.nav_box.append(&self.btn_box);
-        // self.nav_box.append(&self.seppy);
-    
-        self.window.set_child(Some(&self.nav_box));
-        
-        
+        //Add ListView for notes
     }
 
 }
