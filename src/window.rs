@@ -6,20 +6,6 @@ fn button_clicked(my_str: &str){
     println!("{}", my_str);
 }
 
-// pub fn attach_button_listener(btn: &Button, id: &'static str){
-  
-//     btn.connect_clicked(move |_| {
-//         if String::from(id) == "Click" {
-//             button_clicked(&id);
-//         }
-//         else{
-            
-//         }
-        
-//     });
-// }
-
-
 pub struct RustGTKWindow {
     pub window: ApplicationWindow,
     pub btn_of_click: Button,
