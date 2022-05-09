@@ -63,7 +63,7 @@ impl RustGTKWindow {
         //add items to navbar
         self.stack.add_titled(&self.home_box, Some("home"), "Home");
         self.stack.add_titled(&self.other_box, Some("click"), "Click");
-        self.stack.add_titled(&self.seppy, Some("sep"), "Seppy");
+        //self.stack.add_titled(&self.seppy, Some("sep"), "Seppy");
         
         //setup titlebar nav
         self.nav_switch.set_stack(Some(&self.stack));  
@@ -82,7 +82,7 @@ impl RustGTKWindow {
         self.window.show();
     }
 
-    pub fn home(&self){     
+    pub fn build_home_gui(&self){     
         //Add ListView for notes
 
         let model = gio::ListStore::new(gio::AppInfo::static_type());

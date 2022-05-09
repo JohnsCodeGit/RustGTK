@@ -10,7 +10,7 @@ use libadwaita::{
 fn init(app: &Application){
     let gtk_window = RustGTKWindow::new(app);
     gtk_window.init();
-    gtk_window.home();
+    gtk_window.build_home_gui();
     
    
 }
